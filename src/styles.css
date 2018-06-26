@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: beige;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.app-page {
+  height: 100%;
+  width: 100%;
+}
+
+.a-fade {
+  transition: .4s;
+  opacity: 1;
+}
+
+html.is-animating .a-fade{
+  opacity: 0;
+}
