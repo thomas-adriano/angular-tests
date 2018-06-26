@@ -1,5 +1,4 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import Swup from 'swup';
 
 @Component({
   selector: 'app-ft-a',
@@ -11,6 +10,5 @@ export class FtAComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     console.log('fta');
-    const swup = new Swup();
   }
 }

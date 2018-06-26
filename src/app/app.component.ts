@@ -8,7 +8,6 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent implements AfterViewInit {
   title = 'app';
-  swupInstance;
 
   constructor(private router: Router) {}
 
