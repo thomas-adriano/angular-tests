@@ -7,11 +7,20 @@ import {
 } from '@angular/animations';
 
 /**
- * Animação para a troca de rotas, exemplo de uso:
+ * Animação para a troca de rotas, exemplo de uso abaixo.
+ * HTML:
  * <section [@flyInOut]="ro.isActivated ? ro.activatedRoute : ''">
  *  <router-outlet #ro="outlet">
  *  </router-outlet>
  * </section>
+ *
+ * CSS:
+ * router-outlet ~ * {
+ * position: absolute;
+ * height: 100%;
+ * width: 100%;
+ * transform: translateX(0);
+ * }
  *
  */
 export function routeFlyInOut() {
