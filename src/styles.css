@@ -13,6 +13,10 @@ p {
 .app-page {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .a-fade {
@@ -22,4 +26,16 @@ p {
 
 html.is-animating .a-fade{
   opacity: 0;
+}
+
+router-outlet ~ * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: translateX(0);
+}
+
+.text-content {
+  font-size: 2em;
+  text-align: justify;
 }

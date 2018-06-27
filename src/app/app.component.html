@@ -1,2 +1,4 @@
-<router-outlet>
-</router-outlet>
+<section class="app-page" [@flyInOut]="ro.isActivated ? ro.activatedRoute : ''">
+  <router-outlet #ro="outlet">
+  </router-outlet>
+</section>
